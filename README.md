@@ -52,6 +52,7 @@ If you use this code, please cite our paper
     author = {Bernardo Henz and Eduardo S. L. Gastal and Manuel M. Oliveira},
     title   = {Deep Joint Design of Color Filter Arrays and Demosaicing},
     journal = {Computer Graphics Forum},
+    volume = {37},
     year    = {2018},
     }
 ```
