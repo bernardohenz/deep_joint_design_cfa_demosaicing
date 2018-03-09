@@ -12,18 +12,16 @@ This is our Keras implementation for reconstructing test images of known dataset
 - Install Keras along with your preferred backend
 - Clone this repository
 
-### Testing our models
-- Download test datasets
-```bash
-cd datasets/
-bash ./datasets/download_datasets.sh
-cd ..
-```
+### Downloading our trained models
 - Download trained models
 ```bash
-cd trained_models/
 bash ./trained_models/download_trained_models.sh
-cd ..
+```
+
+### Replicating the results from our paper
+- Download test datasets
+```bash
+bash ./datasets/download_datasets.sh
 ```
 - Run the test script
 ```bash
@@ -40,6 +38,16 @@ Parameter ```--model``` specifies the trained model to be loaded (```[our_4x4_no
 Parameter ```--noise_std``` specifies the noise std to be added to the original image (in the scale ```[0,255]```)
 
 Parameter ```--output_dir``` specifies the folder where the reconstructions will be saved (the script will not save the reconstructions if this is not specified)
+
+### Running our models in images
+- Running the specified model on a particular image
+```bash
+python reconstruct_image.py --img_name datasets/kodak/kodim01.png --model our_4x4_noise-free --output_name out.png
+```
+- Running the specified model on directory
+```bash
+python reconstruct_images_from_dir.py --dir datasets/kodak --model our_4x4_noise-free --output_dir results_kodak
+```
 
 ## Training code
 Soon. The original code was in Keras v1, we are preparing the script.
