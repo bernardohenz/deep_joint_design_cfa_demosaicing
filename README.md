@@ -4,18 +4,30 @@ This is our Keras implementation for reconstructing test images of known dataset
 
 ## Prerequisites
 - Python 2 or 3
-- Keras (tested for both Theano and Tensorflow backends)
+- Keras (with any Theano or Tensorflow backend)
+
 
 ## Getting Started
 
 ### Installation
-- Install Keras along with your preferred backend
-- Clone this repository
+- Install Keras along with your preferred backend. For Ubuntu, you can easily install by:
+```bash
+pip install tensorflow keras
+```
+- Clone this repository and enter:
+```bash
+git clone https://github.com/bernardohenz/deep_joint_design_cfa_demosaicing.git
+cd deep_joint_design_cfa_demosaicing
+```
 
 ### Downloading our trained models
 - Download trained models
 ```bash
 bash ./trained_models/download_trained_models.sh
+```
+- Install h5py in order to load the models:
+```bash
+pip install h5py
 ```
 
 ### Replicating the results from our paper
