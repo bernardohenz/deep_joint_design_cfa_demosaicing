@@ -62,7 +62,7 @@ python reconstruct_images_from_dir.py --dir datasets/kodak --model our_4x4_noise
 ```
 
 ## Training code
-Soon. The original code was in Keras v1, we are preparing the script.
+The original code was in Keras v1. We have updated to work on Keras>2.0, please follow to this [training repository](https://github.com/bernardohenz/deep_joint_design_cfa_demosaicing_training) for the training script.
 
 
 ## Citation
