@@ -23,7 +23,7 @@ cd deep_joint_design_cfa_demosaicing
 ### Downloading our trained models
 - Download trained models
 ```bash
-bash ./trained_models/download_trained_models.sh
+python ./trained_models/download_trained_models.py
 ```
 - Install h5py in order to load the models:
 ```bash
@@ -33,7 +33,7 @@ pip install h5py
 ### Replicating the results from our paper
 - Download test datasets
 ```bash
-bash ./datasets/download_datasets.sh
+python ./datasets/download_datasets.py
 ```
 - Run the test script
 ```bash
